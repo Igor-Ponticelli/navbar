@@ -73,8 +73,24 @@ nav ul li a.active, nav ul li a:hover{
         color: #5d8dc7;
     }
     .menu-toggle:before {
-        content: '/f0c9';
+        content: '\f0c9';
         font-family: fontAwesome;
         line-height: 40px;
+    } 
+    .menu-toggle.active:before {
+        content: '\f00d';
+    }
+    nav {
+        display: none;
+    }
+    nav.active {
+        display: block;
+        width: 100%;
+    }
+    nav.active ul {
+        display: block;
+    }
+    nav.active ul li a {
+        margin: 2;
     }
 }
